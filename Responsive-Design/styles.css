@@ -1,0 +1,77 @@
+/*@import url(otro.css o un http://boostrap o google font)*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(image.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: monospace;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background: #333;
+    color:white;
+    top: 0;
+    left: 0;
+}
+/*Primer numero vertical y segundo numero horizontal*/
+form {
+    width: 450px; /*Este es el tamaño del ancho*/
+    margin: auto;   /* Centrado horizontalmente*/
+    background: rgba(0,0,0,0.3);
+    padding: 10px 20px; /*Relleno del formulario como el margen*/
+    box-sizing: border-box;  /*Relleno hacia adentro no hacia afuera
+    para que no aumente el tamaño*/
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+h2 {
+    color: white; /*en letra o en hexadecimal #FFF*/
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#button {
+    background: #31384A;
+    color: white;
+    padding: 20px;
+}
+
+#button:hover {
+    cursor: pointer;
+}
+
+@media (max-widht:480px){
+    form{
+        width: 100%;
+    }
+}
+
+
