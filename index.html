@@ -8,58 +8,80 @@
 			href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
 			rel="stylesheet"
 		/>
+		<link 
+			rel="stylesheet" 
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" 
+		/>
 		<link rel="stylesheet" href="./style.css" />
-		<title>Landing Page</title>
+		<title>Website</title>
 	</head>
 	<body>
-		<header>
-			<div class="logo-container">
-				<img src="./img/logo.svg" alt="logo" />
-				<h4 class="logo">Three Dots</h4>
-			</div>
-			<nav>
-				<ul class="nav-links">
-					<li><a class="nav-link" href="#">Specs</a></li>
-					<li><a class="nav-link" href="#">Products</a></li>
-					<li><a class="nav-link" href="#">Contact</a></li>
+		<!-- Menu Botton -->
+		<div class="menu-btn">
+			<i class="fas fa-bars fa-2x"></i>
+		</div>
+	
+		<!-- Header -->
+		<div class="container">
+			<nav class="main-nav">
+				<img src="img/logo.svg" alt="logo" class="logo">
+	
+				<ul class="main-menu">
+					<li><a href="#">Products</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Prices</a></li>
+					<li><a href="#">Blog</a></li>
+				</ul>
+	
+				<ul class="right-menu">
+					<li>
+						<a href="#">
+							<i class="fas fa-search"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fas fa-shopping-cart"></i>
+						</a>
+					</li>
 				</ul>
 			</nav>
-			<div class="cart">
-				<img src="./img/cart.svg" alt="cart" />
+			<header class="showcase">
+				<h2>Surface Deals</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, illum!
+				</p>
+				<a href="#" class="btn">
+					Read more <i class="fas
+					fa-chevron-right"></i>
+				</a>
+			</header>
+		</div>	
+
+		<div style="height: 200px;"></div>
+		
+		<footer>
+        
+			<div class="footer">
+				<div class="follow">
+					<p>Follow us in</p>
+					<a href="https://facebook.com">
+						<i class="fab fa-facebook"></i>
+					</a>
+					<a href="https://twitter.com">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="https://linkedin.com">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</div>        
+				<p>Copyrigh &copy; 2020, My website</p>
 			</div>
-		</header>
+		</footer>
 
-		<main>
-			<section class="presentation">
-				<div class="introduction">
-					<div class="intro-text">
-						<h1>Laptop for the future</h1>
-						<p>
-							The new 14 inch bezeless display oferring a 4k
-							display with touch screen.
-						</p>
-					</div>
-					<div class="cta">
-						<button class="cta-select">14 Inch</button>
-						<button class="cta-add">Add To Cart</button>
-					</div>
-				</div>
-				<div class="cover">
-					<img src="./img/matebook.png" alt="matebook" />
-				</div>
-			</section>
-
-			<div class="laptop-select">
-				<img src="./img/arrow-left.svg" alt="" />
-				<img src="./img/dot.svg" alt="" />
-				<img src="./img/dot-full.svg" alt="" />
-				<img src="./img/dot-full.svg" alt="" />
-				<img src="./img/arrow-right.svg" alt="" />
-			</div>
-
-			<img class="big-circle" src="./img/big-eclipse.svg" alt="" />
-			<img class="medium-circle" src="./img/mid-eclipse.svg" alt="" />
-			<img class="small-circle" src="./img/small-eclipse.svg" alt="" />
-		</main>
+		<script>
+			document.querySelector('.menu-btn').addEventListener
+			('click', () => document.querySelector('.main-menu')
+			.classList.toggle('show'));
+		</script>
 	</body>
 </html>
